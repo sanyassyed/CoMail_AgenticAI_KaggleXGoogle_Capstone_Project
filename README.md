@@ -149,6 +149,28 @@ I am writing to express interest in the Data Engineer role. Please find my updat
 
 ## Future Work / Extensions
 
+## Sequential Workflows - The Assembly Line
+
+Multi-Agent: Sequential 
+Architecture: Comail AI agent pipeline 
+
+User input : Get the job description from google sheet and update the cover letter, draft email and send to reciter/hiring manager
+
+```
+Info extractor Agent —> Cover letter generation Agent --> Draft Email Agent ——> Send Email Agent —> Editor Agent —> Output
+```
+
+info_file: We provide a file that has list of email ids, name of recruiter/hiring manager, company name. 
+
+1. Info extractor Agent : extract required information from info_file 
+2. Cover letter generation Agent: Role specific Cover letter generation
+3. Draft Email Agent: Recruiter outreach email creation
+4. Send Email Agent: Send email to recruiter with attachment (Email + Cover letter + Resume)
+5. Editor Agent: Edits the draft copy of email.
+
+We have implemented 3 of the agents i.e. [Info extractor Agent, Cover letter generation Agent, Draft Email Agent] which are working as expected, and 
+the last two agents i.e. [Send Email Agent and Editor Agent] are for future work. In summary, below are the work in progress :
+
 * **Automated Email Sending:** Integrate SMTP or Gmail API for direct submission.
 * **Interactive UI:** Allow users to upload job postings and base cover letters via a web interface.
 * **Enhanced LLM Capabilities:** Integrate multiple agents for skill-based or role-specific customization.
