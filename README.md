@@ -27,6 +27,24 @@ CoMail AI automates the full cold-email job application workflow. Given the user
 
 ---
 
+## Sequential Workflows - The Assembly Line
+
+Multi-Agent: Sequential 
+Architecture: Comail AI agent pipeline 
+
+User input : Get the job description from google sheet and update the cover letter, draft email and send to reciter/hiring manager
+Info extractor Agent —> Draft Email Agent ——> Send Email Agent —> Editor Agent —> Output
+
+
+info_file: We provide a file that has list of email ids, name of recruiter/hiring manager, company name. 
+
+1. Info extractor Agent : extract required information from info_file 
+
+2. Cover letter generation Agent: Role specific Cover letter generation
+3. Draft Email Agent: Recruiter outreach email creation
+4. Send Email Agent: Send email to recruiter with attachment (Email + Cover letter + Resume)
+5. Editor Agent: Edits the draft copy of email.
+
 ## **Key Features**
 
 ### **1. Automated Resume Tailoring**
