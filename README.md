@@ -1,4 +1,4 @@
-# CoMail AI – **Automated Resume Tailoring & Cold Email Job Outreach Agent**
+# CoMail AI – **Automated CV Tailoring & Cold Email Job Outreach Agent**
 
 ## Capstone Project – Concierge Agent Track - Multi-Agent Pipeline
 
